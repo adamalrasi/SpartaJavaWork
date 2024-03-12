@@ -45,7 +45,7 @@ public class FilmClassificationTests {
     }
 
     @ParameterizedTest
-    @ValueSource(ints = {18, 19})
+    @ValueSource(ints = {18, 19, 30})
     @DisplayName("WHEN using 18+ RETURN U, PG, 12")
     void checkCorrectAgesReturnALL(int age){
         Assertions.assertEquals("All films are available.", FilmClassification.getClassificationsByAge(age));
