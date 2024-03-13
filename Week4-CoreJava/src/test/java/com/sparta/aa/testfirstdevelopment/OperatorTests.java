@@ -22,7 +22,9 @@ public class OperatorTests {
     @ParameterizedTest
     @CsvSource({
             "0, 10.429",
-            "10, 24.714"
+            "10, 24.714",
+            "-10, 24.714",
+            "100000, 2.0143"
     })
     @DisplayName("Given a number, BODMAS returns the expected result")
     public void givenNumber_BODMAS_ReturnsTheExpectedResult(int num, double expResult)
