@@ -13,6 +13,10 @@ public interface Printable {
     }
 
     void print();
+
+    @Override
+    public boolean equals(Object obj);
+
 }
 
 
